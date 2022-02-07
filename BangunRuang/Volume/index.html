@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- end Bootstrap CSS -->
+
+    <!-- jquery -->
+    <script src="../../jquery.js"></script>
+    <!-- end jquery -->
+
+    <!-- CSS prbadi -->
+    <link rel="stylesheet" href="../../breakpoints.css">
+    <link rel="stylesheet" href="stylel.css">
+    <!-- CSS pribadi -->
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- end AOS -->
+
+    <title>Volume Bangun Ruang</title>
+  </head>
+  <body>
+    
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">Ma<span>th.</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link me-3" href="../../index.html">Lobi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-3" href="../LuasBRuang/index.html">Luas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-3" href="../../Kalkulator/index.html">Kalkulator</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Bangun Datar
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="../../BangunDatar/Keliling/index.html">Keliling</a></li>
+                      <li><a class="dropdown-item" href="../../BangunDatar/Luas/indexl.html">Luas</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <section id="tulisan">
+        <div class="row justify-content-center">
+            <div class="col-10 text-center">
+                <p id="tulisan" data-aos="zoom-in" data-aos-duration="700">Volume</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="wrapper" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+        <div class="menu">
+            <select id="name">
+                <option>Pilih Volume Bangun Ruang</option>
+                <option value="volumekubus">Kubus</option>
+                <option value="volumebalok">Balok</option>
+                <option value="volumelimassegiempat">Limas SegiEmpat</option>
+                <option value="volumelimassegitiga">Limas Segitiga</option>
+                <option value="volumeprismasegitiga">Prisma Segitiga</option>
+                <option value="volumetabung">Tabung</option>
+                <option value="volumekerucut">Kerucut</option>
+                <option value="volumebola">Bola</option>
+            </select>
+        </div>
+    
+        
+
+        <div class="content">
+            <div id="volumekubus" class="data">
+              <h5 class="card-title text-center">Kubus</h5>
+              <hr class="hrcard">
+              <label for="rusukkubus" class="form-label">Rusuk :</label>
+              <input type="number" class="form-control" id="rusukkubus" placeholder="Masukan Rusuk">
+              <button type="button" class="btn btn-primary mt-3" id="volumebtnkubus">Hitung</button>
+              <button type="button" class="btn btn-warning mt-3 " id="volumerkubus">Reset</button>
+              <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+              <div class="hasil text-center" id="volumehkubus"></div>
+            </div>
+
+            <div id="volumebalok" class="data">
+                <h5 class="card-title text-center">Balok</h5>
+                <hr class="hrcard">
+                <label for="panjangbalok" class="form-label">Panjang :</label>
+                <input type="number" class="form-control" id="panjangbalok" placeholder="Masukan Panjang">
+                <label for="volumelebarbalok" class="form-label mt-3">Lebar :</label>
+                <input type="number" class="form-control" id="volumelebarbalok" placeholder="Masukan Lebar">
+                <label for="tinggibalok" class="form-label mt-3">Tinggi :</label>
+                <input type="number" class="form-control" id="tinggibalok" placeholder="Masukan Tinggi">
+                <button type="button" class="btn btn-primary mt-3" id="volumebtnbalok">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="volumerbalok">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="volumehbalok"></div>
+            </div>
+
+            <div id="volumelimassegiempat" class="data">
+                <h5 class="card-title text-center">Limas SegiEmpat</h5>
+                <hr class="hrcard">
+                <label for="vluasalasl4" class="form-label">Luas Alas :</label>
+                <input type="number" class="form-control" id="vluasalasl4" placeholder="Masukan Luas Alas">
+                <label for="vtinggil4" class="form-label mt-2">Tinggi :</label>
+                <input type="number" class="form-control" id="vtinggil4" placeholder="Masukan Tinggi">
+                <button type="button" class="btn btn-primary mt-3" id="volumebtnl4">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="volumerl4">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="volumehl4"></div>
+            </div>
+
+            <div id="volumelimassegitiga" class="data">
+                <h5 class="card-title text-center">Limas Segitiga</h5>
+                <hr class="hrcard">
+                <label for="vluaslasl3" class="form-label">Luas Alas :</label>
+                <input type="number" class="form-control" id="vluasalasl3" placeholder="Masukan Luas Alas">
+                <label for="vtinggil3" class="form-label mt-2">Tinggi :</label>
+                <input type="number" class="form-control" id="vtinggil3" placeholder="Masukan Tinggi">
+                <button type="button" class="btn btn-primary mt-3" id="volumebtnl3">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="volumerl3">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="volumehl3"></div>
+            </div>
+            
+            <div id="volumeprismasegitiga" class="data">
+                <h5 class="card-title text-center">Prisma Segitiga</h5>
+                <hr class="hrcard">
+                <label for="vluasalasp3" class="form-label">Luas Alas :</label>
+                <input type="number" class="form-control" id="vluasalasp3" placeholder="Masukan Luas Alas">
+                <label for="vtinggip3" class="form-label mt-2">Tinggi :</label>
+                <input type="number" class="form-control" id="vtinggip3" placeholder="Masukan Tinggi">
+                <button type="button" class="btn btn-primary mt-3" id="volumebtnp3">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="volumerp3">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="volumehp3"></div>
+            </div>
+
+            <div id="volumetabung" class="data">
+                <h5 class="card-title text-center">Tabung</h5>
+                <hr class="hrcard">
+                <label for="volumetjari" class="form-label">Jari - Jari :</label>
+                <input type="number" class="form-control"id="volumetjari" placeholder="Masukan Jari - Jari">
+                <label for="volumettinggi" class="form-label mt-3">Tinggi :</label>
+                <input type="number" class="form-control" id="volumettinggi" placeholder="Masukan Tinggi">
+                <button type="button" class="btn btn-primary mt-3" id="volumebtntabung">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="volumertabung">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="volumehtabung"></div>
+            </div>
+
+            <div id="volumekerucut" class="data">
+                <h5 class="card-title text-center">Kerucut</h5>
+                <hr class="hrcard">
+                <label for="volumekjari" class="form-label"> Jari - Jari :</label>
+                <input type="number" class="form-control" id="volumekjari" placeholder="Masukan Jari - Jari">
+                <label for="volumetkerucut" class="form-label mt-3">Tinggi :</label>
+                <input type="number" class="form-control" id="volumetkerucut" placeholder="Masukan Tinggi">
+                <button type="button" class="btn btn-primary mt-3" id="volumebtnkerucut">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="volumerkerucut">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="volumehkerucut"></div>
+            </div>
+
+            <div id="volumebola" class="data">
+                <h5 class="card-title text-center">Bola</h5>
+                <hr class="hrcard"> 
+                <label for="volumebjari" class="form-label">Jari - Jari</label>
+                <input type="number" class="form-control" id="volumebjari" placeholder="Masukan Jari - Jari">
+                <button type="button" class="btn btn-primary mt-3" id="volumebtnbola">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="volumerbola">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="volumehbola"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script pribadi -->
+    <script src="volume.js"></script>
+    <!-- end script pribadi -->
+
+    <!-- jquery -->
+    <script>
+      $(document).ready(function(){
+          $("#name").on('change', function() {
+           $('.data').hide()   
+           $("#" + $(this).val()).fadeIn(700)
+          }).change()
+      })
+   </script>
+   <!-- end jquery -->
+
+   <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <!-- end script bootstrap -->
+
+   <!-- script aos -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+   <!-- script aos -->
+  </body>
+</html>

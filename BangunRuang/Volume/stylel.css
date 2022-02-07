@@ -1,0 +1,140 @@
+
+@font-face {
+    font-family: 'poppin-light';
+    src: url('../../font/Poppins-Light.otf');
+}
+
+@font-face {
+    font-family: 'poppin-medium-italic';
+    src: url('../../font/Poppins-MediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'poppin-semibold-italic';
+    src: url('../../font/Poppins-SemiBoldItalic.otf');
+}
+
+@font-face {
+    font-family: 'merienda-medium';
+    src: url('../../font/Merienda-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'permanent';
+    src: url('../../font/PermanentMarker.ttf');
+}
+body {
+    font-family: 'poppin-light', 'Times New Roman', Times, serif;
+    background-image: url('bglight.png');
+}
+.hasil {
+    width: 100%;
+    border: 2px solid #072227;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 8px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    max-width: 400px;
+    margin: 0 auto;
+    border: none;
+}
+
+.menu,
+.content {
+    width: 100%;
+}
+
+option {
+   background-color: #eee;
+}
+
+select {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    background-color: #d3dedc;
+    border: 2px solid white;
+    text-align: center;
+    appearance: none;
+    background: #d3dedc no-repeat;
+}
+
+.content {
+    margin: 30px 0;
+}
+
+.content .data {
+    padding: 25px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+.data {
+    display: none;
+}
+
+.content .hrcard {
+    width: 90%;
+    height: 2px;
+    color: #072227;
+    opacity: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 14px;
+}
+
+h5 {
+    font-family: 'poppin-semibold-italic', 'Times New Roman', Times, serif;
+    font-size: 23px;
+}
+
+.navbar {
+    font-size: 16px;
+    background-color: #fff !important;
+
+}
+
+.navbar ul li a {
+    color: #ff7800 !important;
+}
+
+.navbar ul li a:hover {
+    font-weight: bolder;
+}
+
+.navbar-brand {
+    font-family: 'merienda-medium';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar-brand span {
+    color: #ff7800;
+}
+
+#tulisan {
+    margin-top: 100px;
+    padding-top: 10px;
+}
+
+#tulisan p {
+    font-family: 'permanent', 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 700;
+}

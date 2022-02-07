@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'poppin-light';
+    src: url('../font/Poppins-Light.otf');
+}
+
+@font-face {
+    font-family: 'poppin-medium-italic';
+    src: url('../font/Poppins-MediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'poppin-semibold-italic';
+    src: url('../font/Poppins-SemiBoldItalic.otf');
+}
+
+@font-face {
+    font-family: 'merienda-medium';
+    src: url('../font/Merienda-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'permanent';
+    src: url('../font/PermanentMarker.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('bglight.png');
+    font-family: 'poppin-light', 'Times New Roman', Times, serif;
+}
+
+.main {
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #fff;
+    height: auto;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    border: 3px solid black;
+}
+
+.card {
+    border: transparent;
+    background-color: transparent;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+.btn {
+    height: auto;
+    width: 43px;
+    height: 43px;
+    background-color: #ff1700;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    font-weight: bold;
+    color: black;
+    border: 2px solid white;
+}
+
+.form-control {
+    border: 3px solid black;
+    border-radius: 10px !important;
+    height: 70px;
+    text-align: right;
+    font-size: 18px;
+}
+
+.kuning {
+    background-color: #ffc900;
+}
+
+.ijo {
+    background-color: #06ff00;
+}
+
+#tulisan {
+    margin-top: 40px;
+    padding-top: 10px;
+}
+
+#tulisan p {
+    font-family: 'permanent', 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.navbar {
+    font-size: 16px;
+    background-color: #fff !important;
+
+}
+
+.navbar ul li a {
+    color: #ff7800 !important;
+}
+
+.navbar ul li a:hover {
+    font-weight: bolder;
+}
+
+.navbar-brand {
+    font-family: 'merienda-medium';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar-brand span {
+    color: #ff7800;
+}

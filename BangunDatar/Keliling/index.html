@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    
+    <title>Keliling</title>
+
+    <!-- jquery -->
+    <script src="../../jquery.js"></script>
+    <!-- end jquery -->
+
+    <!-- CSS Pribadi -->
+    <link rel="stylesheet" href="../../breakpoints.css">
+    <link rel="stylesheet" href="style.css">
+    <!--  end CSS Pribadi -->
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- end AOS -->
+  </head>
+  <body>
+
+
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbarlight" id="nav">
+          <div class="container">
+            <a class="navbar-brand" href="#">Ma<span>th.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link me-3" href="../../index.html">Lobi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-3" href="../Luas/indexl.html">Luas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-3" href="../../Kalkulator/index.html">Kalkulator</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Bangun Ruang
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="../../BangunRuang/LuasBRuang/index.html">Luas</a></li>
+                    <li><a class="dropdown-item" href="../../BangunRuang/Volume/index.html">Volume</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </section>
+
+    <section id="tulisan">
+        <div class="row justify-content-center">
+            <div class="col-10 text-center">
+                <p id='tulisan' data-aos="zoom-in" data-aos-duration="700">KELILING</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="wrapper" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+        <div class="menu">
+            <select id="name">
+                <option>Pilih Keliling Bangun Datar</option>
+                <option value="segitiga">Segitiga</option>
+                <option value="persegipanjang">Persegi Panjang</option>
+                <option value="persegi">Persegi</option>
+                <option value="lingkaran">Lingkaran</option>
+                <option value="trapesium">Trapesium</option>
+                <option value="jajargenjang">Jajargenjang</option>
+                <option value="layang">Layang - Layang</option>
+                <option value="belahketupat">Belah Ketupat</option>
+            </select>
+        </div>
+    
+        
+        <div class="content">
+            <div id="segitiga" class="data">
+                <h5 class="card-title text-center">Segitiga</h5>
+                <hr class="hrcard">
+                <label for="sga" class="form-label">Sisi A :</label>
+                <input type="number" class="form-control" id="sga" placeholder="Masukan Sisi A">
+                <label for="sgb" class="form-label mt-3">Sisi B :</label>
+                <input type="number" class="form-control" id="sgb" placeholder="Masukan Sisi B">
+                <label for="sgc" class="form-label mt-3">Sisi C :</label>
+                <input type="number" class="form-control" id="sgc" placeholder="Masukan Sisi B">
+                <button type="button" class="btn btn-primary mt-3" id="btnstg">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="rstg">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="hstg"></div>
+            </div>
+
+            <div id="persegipanjang" class="data">
+                <h5 class="card-title text-center">Persegi Panjang</h5>
+                <hr class="hrcard">
+                <label for="panjang" class="form-label">Panjang :</label>
+                <input type="number" class="form-control" id="panjang" placeholder="Masukan Panjang">
+                <label for="lebar" class="form-label mt-3">Lebar :</label>
+                <input type="number" class="form-control" id="lebar" placeholder="Masukan Lebar">
+                <button type="button" class="btn btn-primary mt-3" id="btnpsgp">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="rpsgp">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="hpsgp"></div>
+            </div>
+
+            <div id="persegi" class="data">
+                <h5 class="card-title text-center">Persegi</h5>
+                <hr class="hrcard">
+                <label for="sisi" class="form-label">Sisi :</label>
+                <input type="number" class="form-control" id="sisi" placeholder="Masukan Sisi">
+                <button type="button" class="btn btn-primary mt-3" id="btnpsg">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="rpsg">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="hpsg"></div>
+            </div>
+
+            <div id="lingkaran" class="data">
+                <h5 class="card-title text-center">Lingkaran</h5>
+                <hr class="hrcard">
+                <label for="jari" class="form-label">Jari - Jari :</label>
+                <input type="number" class="form-control" id="jari" placeholder="Masukan Jari - Jari">
+                <button type="button" class="btn btn-primary mt-3" id="btnling">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="rling">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="hling"></div>
+            </div>
+            
+            <div id="trapesium" class="data">
+                <h5 class="card-title text-center">Trapesium</h5>
+                <hr class="hrcard">
+                <label for="sisia" class="form-label">Sisi A :</label>
+                <input type="number" class="form-control" id="sisia" placeholder="Masukan Sisi A">
+                <label for="sisib" class="form-label mt-3">Sisi B :</label>
+                <input type="number" class="form-control" id="sisib" placeholder="Masukan Sisi B">
+                <label for="sisic" class="form-label mt-3">Sisi C :</label>
+                <input type="number" class="form-control" id="sisic" placeholder="Masukan Sisi C">
+                <label for="sisid" class="form-label mt-3">Sisi D :</label>
+                <input type="number" class="form-control" id="sisid" placeholder="Masukan Sisi D">
+                <button type="button" class="btn btn-primary mt-3" id="btntrap">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="rtrap">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="htrap"></div>
+            </div>
+
+            <div id="jajargenjang" class="data">
+                <h5 class="card-title text-center">Jajar Genjang</h5>
+                <hr class="hrcard">
+                <label for="sisimiring" class="form-label">Sisi Miring :</label>
+                <input type="number" class="form-control" id="sisimiring" placeholder="Masukan Sisi Miring">
+                <label for="sisilurus" class="form-label mt-3">Sisi Lurus :</label>
+                <input type="number" class="form-control" id="sisilurus" placeholder="Masukan Sisi Lurus">
+                <button type="button" class="btn btn-primary mt-3" id="btnjar">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="rjar">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="hjar"></div>
+            </div>
+
+            <div id="layang" class="data">
+                <h5 class="card-title text-center">Layang - Layang</h5>
+                <hr class="hrcard">
+                <label for="sisipanjang" class="form-label"> Sisi Panjang :</label>
+                <input type="number" class="form-control" id="sisipanjang" placeholder="Masukan Sisi Panjang">
+                <label for="sisipendek" class="form-label mt-3">Sisi Pendek :</label>
+                <input type="number" class="form-control" id="sisipendek" placeholder="Masukan Sisi Pendek">
+                <button type="button" class="btn btn-primary mt-3" id="btnlay">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="rlay">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="hlay"></div>
+            </div>
+
+            <div id="belahketupat" class="data">
+                <h5 class="card-title text-center">Belah Ketupat</h5>
+                <hr class="hrcard"> 
+                <label for="bksisi" class="form-label">Sisi :</label>
+                <input type="number" class="form-control" id="bksisi" placeholder="Masukan Sisi">
+                <button type="button" class="btn btn-primary mt-3" id="btnbel">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="rbel">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="hbel"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script pribadi -->
+    <script src="kelilingjs.js"></script>
+    <!-- sript pribadi -->
+
+    <!-- jquery -->
+    <script>
+       $(document).ready(function(){
+           $("#name").on('change', function() {
+            $('.data').hide()   
+            $("#" + $(this).val()).fadeIn(700)
+           }).change()
+       })
+    </script>
+    <!-- end jquery -->
+
+    <!-- scriptt bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- end script bootstrap -->
+
+    <!-- script aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true
+      });
+    </script>
+   <!-- end script aos -->
+  </body>
+</html>

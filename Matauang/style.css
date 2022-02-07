@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'poppin-light';
+    src: url('../font/Poppins-Light.otf');
+}
+
+@font-face {
+    font-family: 'poppin-medium-italic';
+    src: url('../font/Poppins-MediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'poppin-semibold-italic';
+    src: url('../font/Poppins-SemiBoldItalic.otf');
+}
+
+@font-face {
+    font-family: 'merienda-medium';
+    src: url('../font/Merienda-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'permanent';
+    src: url('../font/PermanentMarker.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppin-light', sans-serif;
+}
+
+body {
+    background-image: url('bglight.png');
+    font-family: 'poppin-light', 'Times New Roman', Times, serif;
+    margin-bottom: 50px;
+}
+
+/* navbar */
+.navbar {
+    font-size: 16px;
+    background-color: #fff !important;
+
+}
+
+.navbar ul li a {
+    color: #ff7800 !important;
+}
+
+.navbar ul li a:hover {
+    font-weight: bolder;
+}
+
+.navbar-brand {
+    font-family: 'merienda-medium';
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar-brand span {
+    color: #ff7800;
+}
+/* end navbar */
+
+/* tulisan */
+#tulisan {
+    margin-top: 40px;
+    padding-top: 10px;
+}
+
+#tulisan p {
+    font-family: 'permanent', 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+/* end tulisan */
+
+/* main */
+::selection{
+    color: #fff;
+    background: #675AFE;
+  }
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    width: 370px;
+    padding: 30px;
+    border-radius: 7px;
+    background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 11.5px );
+-webkit-backdrop-filter: blur( 11.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+    border: 2px solid #255255;
+}
+
+.wrapper header{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper form{
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button){
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+form p{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid #999;
+}
+
+form input:focus{
+    padding: 0 14px;
+    border: 2px solid #675AFE;
+}
+
+form .drop-list{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drop-list .select-box{
+    display: flex;
+    width: 115px;
+    height: 45px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: 1px solid #999;
+}
+
+.select-box img{
+    max-width: 21px;
+}
+
+.select-box select{
+    width: auto;
+    font-size: 16px;
+    background: none;
+    margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar{
+    width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+.select-box select::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+.drop-list .icon{
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+form .exchange-rate{
+    font-size: 17px;
+    margin: 20px 0 20px;
+}
+
+form button{
+    height: 52px;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    background: #675AFE;
+    transition: 0.3s ease;
+}
+
+form button:hover{
+    background: #4534fe;
+}
+/* end main */

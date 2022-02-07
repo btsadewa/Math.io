@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- end Bootstrap CSS -->
+
+    <!-- jquery -->
+    <script src="../../jquery.js"></script>
+    <!-- end jquery -->
+
+    <!-- CSS prbadi -->
+    <link rel="stylesheet" href="../../breakpoints.css">
+    <link rel="stylesheet" href="stylel.css">
+    <!-- CSS pribadi -->
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- end AOS -->
+
+    <title>Luas</title>
+  </head>
+  <body>
+    
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">Ma<span>th.</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link me-3" href="../../index.html">Lobi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-3" href="../Keliling/index.html">Keliling</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-3" href="../../Kalkulator/index.html">Kalkulator</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Bangun Ruang
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="../../BangunRuang/LuasBRuang/index.html">Luas</a></li>
+                      <li><a class="dropdown-item" href="../../BangunRuang/Volume/index.html">Volume</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <section id="tulisan">
+        <div class="row justify-content-center">
+            <div class="col-10 text-center">
+                <p id="tulisan" data-aos="zoom-in" data-aos-duration="700">LUAS</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="wrapper" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+        <div class="menu">
+            <select id="name">
+                <option>Pilih Luas Bangun Datar</option>
+                <option value="luassegitiga">Segitiga</option>
+                <option value="luaspersegipanjang">Persegi Panjang</option>
+                <option value="luaspersegi">Persegi</option>
+                <option value="luaslingkaran">Lingkaran</option>
+                <option value="luastrapesium">Trapesium</option>
+                <option value="luasjajargenjang">Jajargenjang</option>
+                <option value="luaslayang">Layang - Layang</option>
+                <option value="luasbelahketupat">Belah Ketupat</option>
+            </select>
+        </div>
+    
+        
+
+        <div class="content">
+            <div id="luassegitiga" class="data">
+              <h5 class="card-title text-center">Segitiga</h5>
+              <hr class="hrcard">
+              <label for="luasalas" class="form-label">Alas :</label>
+              <input type="number" class="form-control" id="luasalas" placeholder="Masukan Alas">
+              <label for="luastinggi" class="form-label mt-3">Tinggi :</label>
+              <input type="number" class="form-control" id="luastinggi" placeholder="Masukan Tinggi">
+              <button type="button" class="btn btn-primary mt-3" id="luasbtnstg">Hitung</button>
+              <button type="button" class="btn btn-warning mt-3 " id="luasrstg">Reset</button>
+              <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+              <div class="hasil text-center" id="luashstg"></div>
+            </div>
+
+            <div id="luaspersegipanjang" class="data">
+                <h5 class="card-title text-center">Persegi Panjang</h5>
+                <hr class="hrcard">
+                <label for="luaspanjang" class="form-label">Panjang :</label>
+                <input type="number" class="form-control" id="luaspanjang" placeholder="Masukan Panjang">
+                <label for="luaslebar" class="form-label mt-3">Lebar :</label>
+                <input type="number" class="form-control" id="luaslebar" placeholder="Masukan Lebar">
+                <button type="button" class="btn btn-primary mt-3" id="luasbtnpsgp">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="luasrpsgp">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="luashpsgp"></div>
+            </div>
+
+            <div id="luaspersegi" class="data">
+                <h5 class="card-title text-center">Persegi</h5>
+                <hr class="hrcard">
+                <label for="luassisi" class="form-label">Sisi :</label>
+                <input type="number" class="form-control" id="luassisi" placeholder="Masukan Sisi">
+                <button type="button" class="btn btn-primary mt-3" id="luasbtnpsg">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="luasrpsg">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="luashpsg"></div>
+            </div>
+
+            <div id="luaslingkaran" class="data">
+                <h5 class="card-title text-center">Lingkaran</h5>
+                <hr class="hrcard">
+                <label for="luasjari" class="form-label">Jari - Jari :</label>
+                <input type="number" class="form-control" id="luasjari" placeholder="Masukan Jari - Jari">
+                <button type="button" class="btn btn-primary mt-3" id="luasbtnling">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="luasrling">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="luashling"></div>
+            </div>
+            
+            <div id="luastrapesium" class="data">
+                <h5 class="card-title text-center">Trapesium</h5>
+                <hr class="hrcard">
+                <label for="luassisia" class="form-label">Sisi A :</label>
+                <input type="number" class="form-control" id="luassisia" placeholder="Masukan Sisi A">
+                <label for="luassisib" class="form-label mt-3">Sisi B :</label>
+                <input type="number" class="form-control" id="luassisib" placeholder="Masukan Sisi B">
+                <label for="luasttrap" class="form-label mt-3">Tinggi :</label>
+                <input type="number" class="form-control" id="luasttrap" placeholder="Masukan Tinggi">
+                <button type="button" class="btn btn-primary mt-3" id="luasbtntrap">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="luasrtrap">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="luashtrap"></div>
+            </div>
+
+            <div id="luasjajargenjang" class="data">
+                <h5 class="card-title text-center">Jajar Genjang</h5>
+                <hr class="hrcard">
+                <label for="luasalasjg" class="form-label">Alas :</label>
+                <input type="number" class="form-control" id="luasalasjg" placeholder="Masukan Alas">
+                <label for="luastinggijg" class="form-label mt-3">Tinggi :</label>
+                <input type="number" class="form-control" id="luastinggijg" placeholder="Masukan Tinggi">
+                <button type="button" class="btn btn-primary mt-3" id="luasbtnjar">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="luasrjar">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="luashjar"></div>
+            </div>
+
+            <div id="luaslayang" class="data">
+                <h5 class="card-title text-center">Layang - Layang</h5>
+                <hr class="hrcard">
+                <label for="luaslayd1" class="form-label"> Diagonal 1 :</label>
+                <input type="number" class="form-control" id="luaslayd1" placeholder="Masukan Diagonal 1">
+                <label for="luaslayd2" class="form-label mt-3">Diagonal 2 :</label>
+                <input type="number" class="form-control" id="luaslayd2" placeholder="Masukan Diagonal 2">
+                <button type="button" class="btn btn-primary mt-3" id="luasbtnlay">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="luasrlay">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="luashlay"></div>
+            </div>
+
+            <div id="luasbelahketupat" class="data">
+                <h5 class="card-title text-center">Belah Ketupat</h5>
+                <hr class="hrcard"> 
+                <label for="luasbkd1" class="form-label">Diagonal 1</label>
+                <input type="number" class="form-control" id="luasbkd1" placeholder="Masukan Diagonal 1">
+                <label for="luasbkd2" class="form-label mt-3">Diagonal 2</label>
+                <input type="number" class="form-control" id="luasbkd2" placeholder="Masukan Diagonal 2">
+                <button type="button" class="btn btn-primary mt-3" id="luasbtnbel">Hitung</button>
+                <button type="button" class="btn btn-warning mt-3 " id="luasrbel">Reset</button>
+                <label for="hasil" class="form-label mt-2 d-block">Hasil :</label>
+                <div class="hasil text-center" id="luashbel"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script pribadi -->
+    <script src="luasjs.js"></script>
+    <!-- end script pribadi -->
+
+    <!-- jquery -->
+    <script>
+      $(document).ready(function(){
+          $("#name").on('change', function() {
+           $('.data').hide()   
+           $("#" + $(this).val()).fadeIn(700)
+          }).change()
+      })
+   </script>
+   <!-- end jquery -->
+
+   <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <!-- end script bootstrap -->
+
+   <!-- script aos -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+   <!-- script aos -->
+  </body>
+</html>

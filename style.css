@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'poppin-light';
+    src: url('font/Poppins-Light.otf');
+}
+
+@font-face {
+    font-family: 'poppin-medium-italic';
+    src: url('font/Poppins-MediumItalic.otf');
+}
+
+@font-face {
+    font-family: 'poppin-semibold-italic';
+    src: url('font/Poppins-SemiBoldItalic.otf');
+}
+
+@font-face {
+    font-family: 'merienda-medium';
+    src: url('font/Merienda-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'permanent';
+    src: url('font/PermanentMarker.ttf');
+}
+body {
+    background-image: url('bglight.png');
+    font-family: 'poppin-medium-italic', 'Times New Roman', Times, serif !important;
+}
+
+.home{
+    padding-top: 220px;
+}
+
+#tulisan p {
+    font-family: 'merienda-medium', 'Times New Roman', Times, serif;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+#tulisan span {
+    color: #ff7800;
+}
+
+#tulisan .copyright {
+    font-size: 12px;
+    margin-top: -14px;
+}
+
+#dropdownMenuButton1 {
+    background-color: #1c6dd0;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'poppin-light', 'Times New Roman', Times, serif;
+}
