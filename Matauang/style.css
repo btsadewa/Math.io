@@ -193,7 +193,7 @@ form .exchange-rate {
 }
 
 form button {
-  height: 52px;
+  height: 40px;
   color: #fff;
   font-size: 17px;
   cursor: pointer;
@@ -203,6 +203,6 @@ form button {
 }
 
 form button:hover {
-  background: #4534fe;
+  background: #4534fe !important;
 }
 /* end main */
