@@ -1,15 +1,21 @@
-@media screen and (max-width : 576px) {
-    .wrapper {
-        width: 300px;
-    }
+@media screen and (max-width: 576px) {
+  .wrapper {
+    width: 300px;
+  }
 }
 
-@media screen and (max-width : 365px) {
-    .wrapper {
-        width: 250px;
-    }
+@media screen and (max-width: 390px) {
+  #footer p {
+    font-size: 12px;
+  }
+}
 
-    #tulisan p {
-        font-size: 40px !important;
-    }
+@media screen and (max-width: 365px) {
+  .wrapper {
+    width: 250px;
+  }
+
+  #tulisan p {
+    font-size: 40px !important;
+  }
 }
