@@ -63,7 +63,7 @@ body {
 
 /* tulisan */
 #tulisan {
-  margin-top: 40px;
+  margin-top: 20px;
   padding-top: 10px;
 }
 
@@ -108,6 +108,10 @@ body {
 
 .wrapper form {
   margin: 40px 0 20px 0;
+}
+
+.amount {
+  margin-top: -20px;
 }
 
 form :where(input, select, button) {
@@ -195,6 +199,7 @@ form button {
   cursor: pointer;
   background: #675afe;
   transition: 0.3s ease;
+  width: 100%;
 }
 
 form button:hover {
