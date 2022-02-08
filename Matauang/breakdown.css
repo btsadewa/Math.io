@@ -7,3 +7,15 @@
     width: 100px;
   }
 }
+
+@media screen and (max-width: 520px) {
+  #tulisan p {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  #tulisan p {
+    font-size: 30px;
+  }
+}
