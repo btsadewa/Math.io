@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="breakdown.css" />
     <!-- end css pribadi -->
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- end AOS -->
+
     <title>Mata Uang</title>
   </head>
   <body>
@@ -62,7 +66,7 @@
     </section>
 
     <section id="main">
-      <div class="wrapper">
+      <div class="wrapper" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
         <header>Mata Uang</header>
         <hr />
         <form action="#">
@@ -74,7 +78,7 @@
             <div class="from">
               <p>Dari</p>
               <div class="select-box">
-                <img src="https://flagcdn.com/48x36/us.png" alt="flag" />
+                <img src="https://flagcdn.com/48x36/id.png" alt="flag" />
                 <select>
                   <!--di isi dengan javascript-->
                 </select>
@@ -84,7 +88,7 @@
             <div class="to">
               <p>Ke</p>
               <div class="select-box">
-                <img src="https://flagcdn.com/48x36/np.png" alt="flag" />
+                <img src="https://flagcdn.com/48x36/us.png" alt="flag" />
                 <select>
                   <!-- di isi dengan javascript -->
                 </select>
@@ -105,5 +109,14 @@
     <script src="daftar-negara.js"></script>
     <script src="script.js"></script>
     <!-- end js pribadi -->
+
+    <!-- js aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <!-- end js aos -->
   </body>
 </html>
